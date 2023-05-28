@@ -3,7 +3,7 @@
     font-family: 'Didact Gothic', 'Trebuchet MS', 'Lucida /Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding:0;
-    color: #808064
+    color: #808064;
 }
 
 body {background-color: #e6e6e6;}
@@ -16,7 +16,7 @@ body {background-color: #e6e6e6;}
 }
 
 main {
-    padding: 25px 20px;
+    padding: 25px 25px;
     border-radius: 5px;
     background-color: rgb(244, 244, 244);
     max-width: 860px;
@@ -33,6 +33,10 @@ header {
     padding: 5px;
 }
 
+.justify {
+    text-align: justify;
+}
+
 img {
     border-radius: 50%;
     margin: 10px 20px 10px 8px;
@@ -41,7 +45,6 @@ img {
 .name-picture {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
 }
 
@@ -72,7 +75,7 @@ h2 {
 }
 
 p, li, a, td  {
-    text-align:justify;
+    text-align: left;
     line-height: 25px;
 }
 
@@ -159,19 +162,19 @@ footer > div {
 }
 } 
 
-@media (max-width: 614px) {
+@media (max-width: 626px) {
 
     body {padding-bottom: 50px;}
 
     .container {
         padding: 0;
         margin-bottom: 50px;
-        border: 5px solid #e6e6e6;;
-        border-width: 10px 5px 0;
+        border: 5px solid #dedede;
+        border-width: 10px 12px 0;
     }
     
     main {
-        padding: 25px 15px;
+        padding: 25px 25px;
     }
     
     section {padding: 15px;}
@@ -179,21 +182,17 @@ footer > div {
     header {
         flex-direction: column;
         align-content: center;
-        border-radius: 5px;
-        padding: 5px;
+        padding: 5px 0;
     }
     
     img {
         border-radius: 50%;
-        margin: 20px 0 10px 0;
+        margin: 10px 0 10px 0;
     }
     
     .name-picture {
         width: 100%;
-        display: flex;
         flex-direction: column;
-        justify-content:flex-end;
-        align-items: center;
     }
     
     .name h1 {font-size: 25px;}
@@ -203,6 +202,12 @@ footer > div {
     footer > div {
         min-width: 100;
         padding: 10px;
+    }
+}
+
+@media (max-width: 455px) {
+    td  {
+        line-height: 18px;
     }
 }
 
